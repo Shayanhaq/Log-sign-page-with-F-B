@@ -1,0 +1,111 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Replace with your chosen font */
+    background-image: url('https://image.cdn2.seaart.ai/2023-11-20/23204137116169221/ec88de6c9cc3c81c40a0f51b8246bae048a62adf_high.webp'); /* Replace with your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+/* header {
+    display: flex;
+    justify-content: space-between
+    margin-bottom: 20px;
+}
+
+
+
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}*/
+
+h1 {
+    margin: 2%;
+    color: #87f10099;
+    font-size: xxx-large;
+}
+
+
+/* #Logout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 36px 63px;
+    cursor: pointer;
+    width: 10%;
+    height: 4%;
+} */
+/* Basic button styling */
+#Logout-button {
+    background-color: #3b572cc4; /* Green background */
+    color: white; /* White text */
+    padding: 15px 32px; /* Spacing inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block display */
+    font-size: 16px; /* Font size */
+    margin: 36px 63px; /* Margin around button */
+    cursor: pointer; /* Pointer cursor on hover */
+    /* width: 10%; Width as a percentage */
+    height: 4%; /* Height as a percentage */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effects */
+#Logout-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Focus state for accessibility */
+#Logout-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0px 0px 0px 3px rgba(0, 122, 255, 0.5); /* Custom focus outline */
+}
+
+
+p{
+    margin: 4%;
+    font-size: larger;
+    color: #2feeefcf;
+    
+}
+
+
+    
+#user-info {
+    display: flex;
+   
+    gap: 10px; /* Space between profile picture and email */
+}
+
+/* Profile picture styling */
+#profile-pic {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the profile picture circular */
+    object-fit: cover; /* Ensures the image covers the area */
+    border: 2px solid #ccc; /* Optional: adds a border around the profile picture */
+    margin-top: 19%;
+}
+
+/* Email styling */
+#user-email {
+    font-size: 1rem; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+    margin-top: 30%;
+}
