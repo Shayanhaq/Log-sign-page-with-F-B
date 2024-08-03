@@ -2,15 +2,6 @@ import {auth,signOut,onAuthStateChanged } from "./Firebase.js"
 let userEmailDiv = document.querySelector( "#user-email")
 
 
-// let mytestfun = async ()=> {
-// try {
-//         await onAuthStateChanged ( auth)
-    
-// } catch (error) {
-//     console.log( "  User is sign out");
-// }
-// }
-// mytestfun()
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -40,14 +31,6 @@ async function fetchUserData() {
 }
 
 fetchUserData();
-
-
-
-
-
-
-
-
 
 
 

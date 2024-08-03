@@ -1,111 +1,282 @@
+/* General Styles */
 body {
-    font-family: 'Montserrat', sans-serif; /* Replace with your chosen font */
-    background-image: url('https://image.cdn2.seaart.ai/2023-11-20/23204137116169221/ec88de6c9cc3c81c40a0f51b8246bae048a62adf_high.webp'); /* Replace with your image */
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://image.cdn2.seaart.ai/2023-11-20/23204137116169221/ec88de6c9cc3c81c40a0f51b8246bae048a62adf_high.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 100vh;
+    background-attachment: fixed; /* Ensure background image stays fixed during scrolling */
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* header {
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
     display: flex;
-    justify-content: space-between
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
 }
 
+header .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+h1 {
+    margin: 0;
+    color: #f1810099;
+    font-size: 3.2rem; /* Adjusted for better fit in the header */
+}
 
+#user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.profile-pic {
+#profile-pic {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
-}*/
-
-h1 {
-    margin: 2%;
-    color: #87f10099;
-    font-size: xxx-large;
+    object-fit: cover;
+    border: 2px solid #ccc;
 }
 
-
-/* #Logout-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 36px 63px;
-    cursor: pointer;
-    width: 10%;
-    height: 4%;
-} */
-/* Basic button styling */
-#Logout-button {
-    background-color: #3b572cc4; /* Green background */
-    color: white; /* White text */
-    padding: 15px 32px; /* Spacing inside the button */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Inline block display */
-    font-size: 16px; /* Font size */
-    margin: 36px 63px; /* Margin around button */
-    cursor: pointer; /* Pointer cursor on hover */
-    /* width: 10%; Width as a percentage */
-    height: 4%; /* Height as a percentage */
-    border: none; /* Remove default border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-}
-
-/* Hover effects */
-#Logout-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
-}
-
-/* Focus state for accessibility */
-#Logout-button:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0px 0px 0px 3px rgba(0, 122, 255, 0.5); /* Custom focus outline */
-}
-
-
-p{
-    margin: 4%;
-    font-size: larger;
-    color: #2feeefcf;
-    
-}
-
-
-    
-#user-info {
-    display: flex;
-   
-    gap: 10px; /* Space between profile picture and email */
-}
-
-/* Profile picture styling */
-#profile-pic {
-    width: 50px; /* Adjust the size as needed */
-    height: 50px;
-    border-radius: 50%; /* Makes the profile picture circular */
-    object-fit: cover; /* Ensures the image covers the area */
-    border: 2px solid #ccc; /* Optional: adds a border around the profile picture */
-    margin-top: 19%;
-}
-
-/* Email styling */
 #user-email {
-    font-size: 1rem; /* Adjust the font size as needed */
-    margin: 0; /* Remove default margin */
-    margin-top: 30%;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+#Logout-button {
+    background-color: #3b572c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#Logout-button:hover {
+    background-color: #2a3d1b;
+    transform: scale(1.05);
+}
+
+#Logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+#hero {
+    background-image: url('https://images3.alphacoders.com/808/thumb-1920-808413.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ff1414;
+    text-align: center;
+    padding: 200px 20px;
+    margin-top: 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff1414;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+#products {
+    padding: 40px 20px;
+    
+    font: sans-serif;
+    font: 1.5em sans-serif;
+}
+#a1{
+    color: #c97a0b;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background: #766767;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+}
+span{
+    color: rgb(169, 5, 5);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin: 10px 0 5px;
+}
+
+.product-item p {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.btn {
+    background-color: #3b572c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #2a3d1b;
+}
+
+/* Call to Action Section */
+#cta {
+    background-color: #3b572c;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#cta h2 {
+    margin: 0 0 20px;
+}
+
+#cta p {
+    margin: 0 0 30px;
+}
+
+#cta .cta-button {
+    background-color: #fff;
+    color: #3b572c;
+}
+
+#cta .cta-button:hover {
+    background-color: #f4f4f4;
+}
+
+.cta-button {
+    background-color: #3b572c;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #2a3d1b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: #ff0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: #3a2f9e;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-info {
+        margin-bottom: 10px; /* Space between profile info and button on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.25rem; /* Adjusted for smaller screens */
+    }
+
+    #Logout-button {
+       
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    #user-email {
+        font-size: 0.9rem;
+    }
+
+    #Logout-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    #hero {
+        padding: 80px 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
